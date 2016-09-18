@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Graphics="Engine.Graphics">
+  <Asset Type="Graphics:SpriteData">
+    <Version>1</Version>
+    <Animations>
+      <Item>
+        <Path>GameObjects\Sprites\JumpSpotTimer\Animations\JumpSpotTimerAnimation</Path>
+        <Name>JumpSpotTimerAnimation</Name>
+        <Frames>6</Frames>
+        <FrameWidth>80</FrameWidth>
+        <FrameHeight>80</FrameHeight>
+        <Speed>500</Speed>
+        <Default>false</Default>
+      </Item>
+    </Animations>
+  </Asset>
+</XnaContent>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Graphics="Engine.Graphics">
+  <Asset Type="Graphics:SpriteData">
+    <Version>1</Version>
+    <Animations>
+      <Item>
+        <Path>GameObjects\Sprites\TimeWarpCooldown\Animations\main</Path>
+        <Name>main</Name>
+        <Frames>5</Frames>
+        <FrameWidth>60</FrameWidth>
+        <FrameHeight>70</FrameHeight>
+        <Speed>400</Speed>
+        <Default>false</Default>
+      </Item>
+    </Animations>
+  </Asset>
+</XnaContent>

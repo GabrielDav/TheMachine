@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+  <Asset Type="Engine.Graphics.SpriteData">
+    <Version>1.0</Version>
+    <Animations>
+      <Item>
+        <Path>GameObjects/Sprites/idle</Path>
+        <Name>Idle</Name>
+        <Frames>5</Frames>
+        <FrameWidth>64</FrameWidth>
+        <FrameHeight>64</FrameHeight>
+        <Speed>1000</Speed>
+      </Item>
+    </Animations>
+  </Asset>
+</XnaContent>

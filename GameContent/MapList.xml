@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+  <Asset Type="GameLibrary.MapList">
+    <MenuMap>Maps/Menu</MenuMap>
+    <ArcadeMap>Maps/ArcadeMap</ArcadeMap>
+    <GameMaps>
+      <Item>Maps/1</Item>
+      <Item>Maps/2</Item>
+      <Item>Maps/3</Item>
+      <Item>Maps/4</Item>
+      <Item>Maps/5</Item>
+      <Item>Maps/6</Item>
+      <Item>Maps/7</Item>
+      <Item>Maps/8</Item>
+      <Item>Maps/9</Item>
+      <Item>Maps/10</Item>
+      <Item>Maps/11</Item>
+      <Item>Maps/12</Item>
+      <Item>Maps/13</Item>
+      <Item>Maps/14</Item>
+      <Item>Maps/15</Item>
+      <Item>Maps/16</Item>
+      <Item>Maps/17</Item>
+      <Item>Maps/18</Item>
+      <Item>Maps/19</Item>
+      <Item>Maps/20</Item>
+      <Item>Maps/21</Item>
+      <Item>Maps/22</Item>
+      <Item>Maps/23</Item>
+      <Item>Maps/24</Item>
+      <Item>Maps/25</Item>
+      <Item>Maps/26</Item>
+      <Item>Maps/27</Item>
+      <Item>Maps/28</Item>
+      <Item>Maps/29</Item>
+      <Item>Maps/30</Item>
+    </GameMaps>
+    <LevelsTime>
+      2000
+      7000
+      8600
+      14000
+      27000
+      14000
+      15500
+      28000
+      30500
+      35000
+      20000
+      24500
+      19000 
+      25000
+      20000
+      18000 
+      25000
+      28500
+      22000
+      22000
+      19000
+      27500
+      25500
+      18000
+      20000
+      16500
+      34000
+      21500
+      44000
+      43000
+    </LevelsTime>
+    <LevelsScore>1000 2000 3000 4000 5000 6000 7000 8000 9000 10000 11000 12000 13000 14000 15000 16000 17000 18000 19000 20000 21000 22000 23000 24000 25000 26000 27000 28000 29000 30000</LevelsScore>
+    <MinLevelScore>
+      <!--1--> 600
+      <!--2--> 1600
+      <!--3--> 2300
+      <!--4--> 2700
+      <!--5--> 3700
+      <!--6--> 4000
+      <!--7--> 6000
+      <!--8--> 6100
+      <!--9--> 8000
+      <!--10--> 8200
+      <!--11--> 8000
+      <!--12--> 9000
+      <!--13--> 8000
+      <!--14--> 5000
+      <!--15--> 8000
+      <!--16--> 5000
+      <!--17--> 9000
+      <!--18--> 11000
+      <!--19--> 15000
+      <!--20--> 13000
+      <!--21--> 11000
+      <!--22--> 16000
+      <!--23--> 10000
+      <!--24--> 14000
+      <!--25--> 15000
+      <!--26--> 15000
+      <!--27--> 27000
+      <!--28--> 23000
+      <!--29--> 20000
+      <!--30--> 25000
+    </MinLevelScore>
+    <AdOrientationTop>
+      <!--1--> false
+      <!--2--> false
+      <!--3--> false
+      <!--4--> true
+      <!--5--> false
+      <!--6--> true
+      <!--7--> true
+      <!--8--> false
+      <!--9--> false
+      <!--10--> true
+      <!--11--> true
+      <!--12--> false
+      <!--13--> true
+      <!--14--> false
+      <!--15--> true
+      <!--16--> true
+      <!--17--> false
+      <!--18--> true
+      <!--19--> false
+      <!--20--> false
+      <!--21--> true
+      <!--22--> true
+      <!--23--> false
+      <!--24--> false
+      <!--25--> true
+      <!--26--> false
+      <!--27--> true
+      <!--28--> false
+      <!--29--> true
+      <!--30--> false  
+    </AdOrientationTop>
+<!--===========================Normal Maps==========================================================================-->
+    <NormalMaps>
+      <Item>Maps/Normal/1</Item>
+      <Item>Maps/Normal/2</Item>
+      <Item>Maps/Normal/3</Item>
+      <Item>Maps/Normal/4</Item>
+      <Item>Maps/Normal/5</Item>
+      <Item>Maps/Normal/6</Item>
+      <Item>Maps/Normal/7</Item>
+      <Item>Maps/Normal/8</Item>
+      <Item>Maps/Normal/9</Item>
+      <Item>Maps/Normal/10</Item>
+      <Item>Maps/Normal/11</Item>
+      <Item>Maps/Normal/12</Item>
+      <Item>Maps/Normal/13</Item>
+      <Item>Maps/Normal/14</Item>
+      <Item>Maps/Normal/15</Item>
+    </NormalMaps>
+    <LevelsTimeNormal>
+      <!--1-->10000
+      <!--2-->11000
+      <!--3-->32000
+      <!--4-->17000
+      <!--5-->30000
+      <!--6-->27000
+      <!--7-->43000
+      <!--8-->65000
+      <!--9-->29000
+      <!--10-->60000
+      <!--11-->45000
+      <!--12-->45000
+      <!--13-->120000
+      <!--14-->120000
+      <!--15-->110000
+    </LevelsTimeNormal>
+    <LevelsScoreNormal>
+      1000
+      2000
+      3000
+      4000
+      5000
+      6000
+      7000
+      8000
+      9000
+      10000
+      11000
+      12000
+      13000
+      14000
+      15000
+    </LevelsScoreNormal>
+    <MinLevelScoreNormal>
+      <!--1--> 800
+      <!--2--> 1600
+      <!--3--> 2400
+      <!--4--> 2200
+      <!--5--> 4500
+      <!--6--> 3500
+      <!--7--> 4600
+      <!--8--> 7400
+      <!--9--> 6600
+      <!--10--> 9000
+      <!--11--> 9500
+      <!--12--> 7200
+      <!--13--> 115000
+      <!--14--> 9500
+      <!--15--> 8000
+    </MinLevelScoreNormal>
+    <AdOrientationTopNornal>
+      <!--1--> false
+      <!--2--> false
+      <!--3--> false
+      <!--4--> false
+      <!--5--> false
+      <!--6--> true
+      <!--7--> false
+      <!--8--> true
+      <!--9--> false
+      <!--10--> true
+      <!--11--> false
+      <!--12--> false
+      <!--13--> false
+      <!--14--> false
+      <!--15--> true
+    </AdOrientationTopNornal>
+    <GameEndMap>Maps/GameEndMap</GameEndMap>
+  </Asset>
+</XnaContent>

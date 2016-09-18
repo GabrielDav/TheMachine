@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Graphics="Engine.Graphics">
+  <Asset Type="Graphics:SpriteData">
+    <Version>1</Version>
+    <Animations>
+      <Item>
+        <Path>GameObjects\Sprites\Player\Animations\Air</Path>
+        <Name>Air</Name>
+        <Frames>1</Frames>
+        <FrameWidth>60</FrameWidth>
+        <FrameHeight>100</FrameHeight>
+        <Speed>500</Speed>
+        <Default>false</Default>
+      </Item>
+      <Item>
+        <Path>GameObjects\Sprites\Player\Animations\Circle</Path>
+        <Name>Circle</Name>
+        <Frames>1</Frames>
+        <FrameWidth>100</FrameWidth>
+        <FrameHeight>100</FrameHeight>
+        <Speed>500</Speed>
+        <Default>false</Default>
+      </Item>
+      <Item>
+        <Path>GameObjects\Sprites\Player\Animations\Ground</Path>
+        <Name>Ground</Name>
+        <Frames>1</Frames>
+        <FrameWidth>100</FrameWidth>
+        <FrameHeight>60</FrameHeight>
+        <Speed>500</Speed>
+        <Default>false</Default>
+      </Item>
+      <Item>
+        <Path>GameObjects\Sprites\Player\Animations\Wall</Path>
+        <Name>Wall</Name>
+        <Frames>1</Frames>
+        <FrameWidth>35</FrameWidth>
+        <FrameHeight>100</FrameHeight>
+        <Speed>500</Speed>
+        <Default>false</Default>
+      </Item>
+    </Animations>
+  </Asset>
+</XnaContent>

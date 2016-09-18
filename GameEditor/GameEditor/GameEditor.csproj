@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{1C1BBF30-94F2-4F09-A662-C1360C1CFE99}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GameEditor</RootNamespace>
+    <AssemblyName>GameEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>Reach</XnaProfile>
+    <XnaCrossPlatformGroupID>993ab8e5-0aa9-4bc1-9eb1-de733ef6baba</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EDITOR</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackgroundViewer.cs" />
+    <Compile Include="EditorMenuManager.cs" />
+    <Compile Include="DialogNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogNew.Designer.cs">
+      <DependentUpon>DialogNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditorGameManager.cs" />
+    <Compile Include="IconsResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IconsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MruStripMenu.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sprite Editor\ImportAnimationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sprite Editor\ImportAnimationForm.Designer.cs">
+      <DependentUpon>ImportAnimationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sprite Editor\NewSpriteDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sprite Editor\NewSpriteDialog.Designer.cs">
+      <DependentUpon>NewSpriteDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sprite Editor\Sprite Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sprite Editor\Sprite Editor.Designer.cs">
+      <DependentUpon>Sprite Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sprite Editor\SpriteControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sprite Editor\SpriteControl.Designer.cs">
+      <DependentUpon>SpriteControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sprite Editor\SpriteEditorSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>SpriteEditorSettings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Sprite Editor\XnaWindowControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sprite Editor\TabControlMod.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Toolbox\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Toolbox\Toolbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Toolbox\ToolboxGroup.cs" />
+    <Compile Include="Toolbox\ToolboxItem.cs" />
+    <Compile Include="Toolbox\ToolboxItemBase.cs" />
+    <Compile Include="Toolbox\ToolboxType.cs" />
+    <Compile Include="TriggerEditor\Selectors\ActionSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\BoolSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\BoolSelector.Designer.cs">
+      <DependentUpon>BoolSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\ConditionSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\CameraPathSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\StringSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\StringSelector.Designer.cs">
+      <DependentUpon>StringSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\MenuObjectSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\NativeParametersBoolSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\NativeFunctionsSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\PointSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\PointSelector.Designer.cs">
+      <DependentUpon>PointSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\PhysicalObjectSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\IntegerSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\IntegerSelector.Designer.cs">
+      <DependentUpon>IntegerSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\EventSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\FloatSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\FloatSelector.Designer.cs">
+      <DependentUpon>FloatSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\ListSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\ListSelector.Designer.cs">
+      <DependentUpon>ListSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\RegionSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\Selectors\TriggerSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\TriggerController.cs" />
+    <Compile Include="TriggerEditor\TriggerEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\TriggerEditorDialog.Designer.cs">
+      <DependentUpon>TriggerEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TriggerEditor\TriggerNameDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\TriggerNameDialog.Designer.cs">
+      <DependentUpon>TriggerNameDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TriggerEditor\TriggersMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\TriggersMenu.Designer.cs">
+      <DependentUpon>TriggersMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TriggerEditor\TriggerWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TriggerEditor\TriggerWindow.Designer.cs">
+      <DependentUpon>TriggerWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XnaWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico" />
+    <Content Include="GameThumbnail.png">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </Content>
+    <None Include="Icons\ColorDialog.bmp" />
+    <None Include="Icons\New.bmp" />
+    <None Include="Icons\Refresh.bmp" />
+    <None Include="Icons\Animate.png" />
+    <None Include="Icons\DeleteFolderHS.png" />
+    <None Include="Icons\exportRed.png" />
+    <None Include="Icons\importRed.png" />
+    <None Include="Icons\FlipHorizontal.bmp" />
+    <None Include="Icons\FlipVertical.bmp" />
+    <None Include="Icons\NewRegion.png" />
+    <None Include="Icons\Regions.bmp" />
+    <None Include="Icons\Trigger.png" />
+    <None Include="Icons\Condition.png" />
+    <None Include="Icons\Event.bmp" />
+    <None Include="Icons\Event.png" />
+    <None Include="Icons\Edit.png" />
+    <None Include="Icons\Down.png" />
+    <None Include="Icons\Up.png" />
+    <None Include="Icons\Destination.bmp" />
+    <None Include="Icons\recover.jpg" />
+    <None Include="Icons\Recover.bmp" />
+    <Content Include="rotate.cur">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Icons\Rotate.png" />
+    <None Include="Icons\import.png" />
+    <None Include="Icons\open_last.bmp" />
+    <None Include="Icons\Stop.png" />
+    <None Include="Icons\Restart.png" />
+    <None Include="Icons\Pause.png" />
+    <None Include="Icons\Delete.png" />
+    <None Include="Icons\ZoomOut.png" />
+    <None Include="Icons\ZoomIn.png" />
+    <None Include="Icons\ZoomHS.png" />
+    <None Include="Icons\Grid.png" />
+    <None Include="Icons\Run.png" />
+    <None Include="Icons\Paste.bmp" />
+    <None Include="Icons\Cut.bmp" />
+    <None Include="Icons\Copy.bmp" />
+    <None Include="Icons\Save.bmp" />
+    <None Include="Icons\OpenFolder.bmp" />
+    <None Include="Icons\NewWindow.bmp" />
+    <None Include="Icons\Edit_Undo.bmp" />
+    <None Include="Icons\Edit_Redo.bmp" />
+    <None Include="Icons\SendToBack.png" />
+    <None Include="Icons\SendBackward.bmp" />
+    <None Include="Icons\BringToFront.bmp" />
+    <None Include="Icons\BringForward.bmp" />
+    <None Include="Sprite Editor\SpriteEditorSettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>SpriteEditorSettings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Toolbox\Icons\Plus.png" />
+    <None Include="Toolbox\Icons\Minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DialogNew.resx">
+      <DependentUpon>DialogNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IconsResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>IconsResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sprite Editor\ImportAnimationForm.resx">
+      <DependentUpon>ImportAnimationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sprite Editor\NewSpriteDialog.resx">
+      <DependentUpon>NewSpriteDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sprite Editor\Sprite Editor.resx">
+      <DependentUpon>Sprite Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sprite Editor\SpriteControl.resx">
+      <DependentUpon>SpriteControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toolbox\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriggerEditor\Selectors\BoolSelector.resx">
+      <DependentUpon>BoolSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriggerEditor\Selectors\CameraPathSelector.resx">
+      <DependentUpon>CameraPathSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriggerEditor\Selectors\StringSelector.resx">
+      <DependentUpon>StringSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriggerEditor\Selectors\MenuObjectSelector.resx">
+      <DependentUpon>MenuObjectSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriggerEditor\Selectors\PointSelector.resx">
+      <DependentUpon>PointSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriggerEditor\Selectors\EventSelector.resx">
+      <DependentUpon>EventSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriggerEditor\Selectors\IntegerSelector.resx">
+      <DependentUpon>IntegerSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriggerEditor\Selectors\FloatSelector.resx">
+      <DependentUpon>FloatSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriggerEditor\Selectors\ListSelector.resx">
+      <DependentUpon>ListSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriggerEditor\Selectors\PhysicalObjectSelector.resx">
+      <DependentUpon>PhysicalObjectSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriggerEditor\Selectors\RegionSelector.resx">
+      <DependentUpon>RegionSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriggerEditor\TriggerEditorDialog.resx">
+      <DependentUpon>TriggerEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriggerEditor\TriggerNameDialog.resx">
+      <DependentUpon>TriggerNameDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriggerEditor\TriggersMenu.resx">
+      <DependentUpon>TriggersMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TriggerEditor\TriggerWindow.resx">
+      <DependentUpon>TriggerWindow.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Engine\Engine.csproj">
+      <Project>{65858CA5-1784-4FE0-8E88-CDBB1329C2BE}</Project>
+      <Name>Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GameContent\GameContent.contentproj">
+      <Project>{D522DCE1-E078-4B16-BAD1-1C8CC5718DCC}</Project>
+      <Name>GameContent</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GameLibrary\GameLibrary.csproj">
+      <Project>{C1437757-E474-45CC-A221-852AD8D7AD05}</Project>
+      <Name>GameLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\XnaContentCompiler\XnaContentCompiler.csproj">
+      <Project>{688AD9CC-FEF0-4E81-947E-52AA3D6964F7}</Project>
+      <Name>XnaContentCompiler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\XnaGraphicsDeviceControl\XnaGraphicsDeviceControl.csproj">
+      <Project>{37768F4A-8ABD-46C3-B602-BA24D51FAFCE}</Project>
+      <Name>XnaGraphicsDeviceControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 4.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

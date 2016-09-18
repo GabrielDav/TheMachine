@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Graphics="Engine.Graphics">
+  <Asset Type="Graphics:SpriteData">
+    <Version>1</Version>
+    <Animations>
+      <Item>
+        <Path>GameObjects\Sprites\Seeker\Animations\Seek</Path>
+        <Name>Seek</Name>
+        <Frames>4</Frames>
+        <FrameWidth>90</FrameWidth>
+        <FrameHeight>90</FrameHeight>
+        <Speed>40</Speed>
+        <Default>true</Default>
+      </Item>
+    </Animations>
+  </Asset>
+</XnaContent>

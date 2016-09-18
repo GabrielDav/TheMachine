@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GameLibrary.Gui.ScreenManagement.ScreenManager">
+    <Position X="2" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAAAAAAwAAAAAAAAAAAAAAAAAAAIAAAAAAAAQ=</HashCode>
+      <FileName>Gui\ScreenManagement\ScreenManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="GameLibrary.Gui.ScreenManagement.IScreen">
+    <Position X="4.75" Y="1" Width="1.5" />
+    <AssociationLine Name="State" Type="GameLibrary.Gui.ScreenManagement.ScreenState">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.485" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAACAAAwAAAAAAAAAAAAAAAAAAAAACBAIIAAA=</HashCode>
+      <FileName>Gui\ScreenManagement\IScreen.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="State" />
+    </ShowAsAssociation>
+  </Interface>
+  <Enum Name="GameLibrary.Gui.ScreenManagement.ScreenState">
+    <Position X="7.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAgAAAAAAAAAAAAABAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Gui\ScreenManagement\ScreenState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

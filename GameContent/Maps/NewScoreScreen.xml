@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+  <Asset Type="GameLibrary.Map">
+    <Version>1</Version>
+    <Width>2000</Width>
+    <Height>2000</Height>
+    <BackgroundColor>FFFFFFFF</BackgroundColor>
+    <Background Null="true" />
+    <Gravity>9.8</Gravity>
+    <MapType>Menu</MapType>
+    <Resources>
+      <TextureIdentifiers>
+        <Item>
+          <Name>MenuBtnMap</Name>
+          <Path>
+            <Item>GUI/Menu/ScoreScreen/Hand</Item>
+          </Path>
+          <SubResources>
+            <Item>
+              <Name>ScoreDisplayDeviceDetails</Name>
+              <Path>
+                <Item>GUI/Menu/ScoreScreen/Cilinder</Item>
+              </Path>
+              <SubResources Null="true" />
+              <ResourceType>Texture</ResourceType>
+            </Item>
+          </SubResources>
+          <ResourceType>Texture</ResourceType>
+        </Item>
+      </TextureIdentifiers>
+      <SpriteIdentifiers />
+      <SoundIdentifiers />
+    </Resources>
+    <GameObjects />
+    <BackgroundObjects />
+    <Regions />
+    <Triggers />
+  </Asset>
+</XnaContent>

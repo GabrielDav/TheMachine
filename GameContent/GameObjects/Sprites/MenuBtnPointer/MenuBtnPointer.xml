@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Graphics="Engine.Graphics">
+  <Asset Type="Graphics:SpriteData">
+    <Version>1</Version>
+    <Animations>
+      <Item>
+        <Path>GameObjects\Sprites\MenuBtnPointer\Animations\Main</Path>
+        <Name>Main</Name>
+        <Frames>11</Frames>
+        <FrameWidth>100</FrameWidth>
+        <FrameHeight>100</FrameHeight>
+        <Speed>50</Speed>
+        <Default>true</Default>
+      </Item>
+    </Animations>
+  </Asset>
+</XnaContent>

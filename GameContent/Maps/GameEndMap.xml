@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Objects="GameLibrary.Objects" xmlns:Actions="Engine.Mechanics.Triggers.Actions">
+  <Asset Type="GameLibrary.Map">
+    <Version>4</Version>
+    <Width>6000</Width>
+    <Height>6000</Height>
+    <BackgroundColor>FFFFFFFF</BackgroundColor>
+    <Background>5_bg</Background>
+    <Gravity>12.5</Gravity>
+    <MapType>Menu</MapType>
+    <Resources>
+      <TextureIdentifiers>
+        <Item>
+          <Name>MenuGear</Name>
+          <Path>
+            <Item>GUI/Menu/Menu_gear1</Item>
+            <Item>GUI/Menu/Menu_gear2</Item>
+            <Item>GUI/Menu/Menu_gear3</Item>
+            <Item>GUI/Menu/Menu_gear4</Item>
+          </Path>
+          <SubResources Null="true" />
+          <ResourceType>Texture</ResourceType>
+        </Item>
+      </TextureIdentifiers>
+      <SpriteIdentifiers />
+      <SoundIdentifiers />
+    </Resources>
+    <GameObjects>
+      <Item Type="Objects:MenuGear">
+        <Rectangle>
+          <Width>500</Width>
+          <Height>500</Height>
+          <X>3250</X>
+          <Y>2350</Y>
+        </Rectangle>
+        <Name>MenuGear1</Name>
+        <ResourceId>MenuGear</ResourceId>
+        <Flip>None</Flip>
+        <LayerDepth>0.5</LayerDepth>
+        <Color>FFFFFFFF</Color>
+        <ResourceVariation>1</ResourceVariation>
+        <IsActivated>true</IsActivated>
+        <Rotation>0</Rotation>
+        <RotationSpeed>1</RotationSpeed>
+        <RotationDirection>Clockwise</RotationDirection>
+      </Item>
+      <Item Type="Objects:MenuGear">
+        <Rectangle>
+          <Width>500</Width>
+          <Height>500</Height>
+          <X>2370</X>
+          <Y>2450</Y>
+        </Rectangle>
+        <Name>MenuGear2</Name>
+        <ResourceId>MenuGear</ResourceId>
+        <Flip>None</Flip>
+        <LayerDepth>0.5</LayerDepth>
+        <Color>FFFFFFFF</Color>
+        <ResourceVariation>0</ResourceVariation>
+        <IsActivated>true</IsActivated>
+        <Rotation>0</Rotation>
+        <RotationSpeed>1</RotationSpeed>
+        <RotationDirection>Clockwise</RotationDirection>
+      </Item>
+      <Item Type="Objects:MenuGear">
+        <Rectangle>
+          <Width>500</Width>
+          <Height>500</Height>
+          <X>2570</X>
+          <Y>2870</Y>
+        </Rectangle>
+        <Name>MenuGear3</Name>
+        <ResourceId>MenuGear</ResourceId>
+        <Flip>None</Flip>
+        <LayerDepth>0.5</LayerDepth>
+        <Color>FFFFFFFF</Color>
+        <ResourceVariation>3</ResourceVariation>
+        <IsActivated>true</IsActivated>
+        <Rotation>0</Rotation>
+        <RotationSpeed>1</RotationSpeed>
+        <RotationDirection>Counterclockwise</RotationDirection>
+      </Item>
+    </GameObjects>
+    <BackgroundObjects />
+    <Regions />
+    <Triggers>
+      <Item>
+        <Name>Trigger001</Name>
+        <Enabled>true</Enabled>
+        <Events>3</Events>
+        <Actions>
+          <Item Type="Actions:SetCameraPosition">
+            <NewPos>3200 2300</NewPos>
+          </Item>
+        </Actions>
+        <Conditions />
+      </Item>
+    </Triggers>
+  </Asset>
+</XnaContent>
