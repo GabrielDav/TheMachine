@@ -1,0 +1,2 @@
+# TheMachine
+This is my game engine and game editor, the game code itself is not included. You can play with the editor if you want (it requires an XNA framework to work). Please do not take code too seriously, this is not an example of my current skills, but rather look into the (distant) past when I was just starting to learn. And I learned a lot from the mistakes I did by creating engine architecture from scratch.
